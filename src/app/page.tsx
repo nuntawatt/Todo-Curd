@@ -122,7 +122,7 @@ export default function Home() {
         <button onClick={handleCreateTodo} className="btn create-btn">
           Add Task
         </button>
-      </div>   
+      </div>     
 
       {loading ? (
         <p>Loading...</p>
