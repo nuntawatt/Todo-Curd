@@ -113,16 +113,25 @@ export default function Home() {
           onChange={(e) => setDescription(e.target.value)}
           className="input-field"
         />
+        
         <input
           type="date"
+          id="duedate"
           value={duedate}
-          onChange={(e) => setDuedate(e.target.value)}
+          onChange={(e) => {
+            const selectedDate = e.target.value;
+            if (!isNaN(Date.parse(selectedDate))) {
+              setDuedate(selectedDate);
+            }
+          }}
           className="input-field"
+          placeholder="Select due date" // เพิ่ม placeholder เพื่อระบุข้อมูลที่ต้องกรอก
+          title="Please select a due date" // เพิ่ม title เพื่อบอกผู้ใช้ว่าต้องทำอะไร
         />
         <button onClick={handleCreateTodo} className="btn create-btn">
           Add Task
         </button>
-      </div>     
+      </div>
 
       {loading ? (
         <p>Loading...</p>
