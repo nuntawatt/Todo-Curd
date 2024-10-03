@@ -1,10 +1,10 @@
 /* Body */
 body {
-  font-family: 'Lora', serif; /* Serif font for a more elegant feel */
-  background-color: #1c1c1e; /* Dark background */
+  font-family: 'Lora', serif; 
+  background-color: #1c1c1e; 
   margin: 0;
   padding: 0;
-  color: #f4f4f5; /* Light font color */
+  color: #f4f4f5; 
 }
 
 /* Page container */
@@ -12,9 +12,9 @@ body {
   max-width: 900px;
   margin: 50px auto;
   padding: 30px;
-  background: #2c2c2e; /* Darker container background */
+  background: #2c2c2e; 
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Heavier shadow for depth */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
   transition: transform 0.2s ease;
 }
 
@@ -24,7 +24,7 @@ body {
 
 /* Headings */
 h1, h2 {
-  color: #d4af37; /* Gold color for elegance */
+  color: #d4af37; 
   text-align: center;
   font-weight: 700;
   letter-spacing: 1px;
@@ -45,7 +45,7 @@ h1, h2 {
 }
 
 .input-field:focus {
-  border-color: #d4af37; /* Gold border on focus */
+  border-color: #d4af37; 
   outline: none;
 }
 
@@ -57,14 +57,18 @@ h1, h2 {
   cursor: pointer;
   font-weight: bold;
   margin-top: 15px;
-  transition: background-color 0.3s, box-shadow 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
   font-size: 16px;
   color: white;
 }
 
+.btn:hover {
+  transform: translateY(-2px);
+}
+
 /* Create button */
 .create-btn {
-  background-color: #d4af37; /* Gold button */
+  background-color: #d4af37; 
 }
 
 .create-btn:hover {
@@ -74,11 +78,11 @@ h1, h2 {
 
 /* Status buttons */
 .status-btn {
-  background-color: #c0c0c0; /* Silver button */
+  background-color: #c0c0c0; 
 }
 
 .completed-btn {
-  background-color: #5a5a5c; /* Dark silver for completed tasks */
+  background-color: #5a5a5c; 
 }
 
 .completed-btn:hover {
@@ -95,7 +99,7 @@ h1, h2 {
 
 /* Delete button */
 .delete-btn {
-  background-color: #ff6347; /* Deep orange-red for delete */
+  background-color: #ff6347; 
 }
 
 .delete-btn:hover {
@@ -110,7 +114,7 @@ h1, h2 {
 }
 
 .todo-item {
-  background-color: #333336; /* Dark background for each item */
+  background-color: #333336; 
   border: 1px solid #444;
   border-radius: 8px;
   padding: 20px;

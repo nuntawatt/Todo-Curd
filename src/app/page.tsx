@@ -96,24 +96,23 @@ export default function Home() {
   return (
     <div className="page">
       <h1>TODO List</h1>
-
+  
       <div>
-        <h2>Create</h2>
+        <h2>Create New Task</h2>
         <input
           type="text"
-          placeholder="Input yourname"
+          placeholder="Task Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           className="input-field"
         />
         <input
           type="text"
-          placeholder="Input yourDescription"
+          placeholder="Task Description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           className="input-field"
         />
-        
         <input
           type="date"
           id="duedate"
@@ -125,14 +124,12 @@ export default function Home() {
             }
           }}
           className="input-field"
-          placeholder="Select due date" // เพิ่ม placeholder เพื่อระบุข้อมูลที่ต้องกรอก
-          title="Please select a due date" // เพิ่ม title เพื่อบอกผู้ใช้ว่าต้องทำอะไร
         />
         <button onClick={handleCreateTodo} className="btn create-btn">
           Add Task
         </button>
       </div>
-
+  
       {loading ? (
         <p>Loading...</p>
       ) : (
