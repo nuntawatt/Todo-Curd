@@ -6,6 +6,7 @@ const TodoSchema = new mongoose.Schema({
     status: Boolean,
     duedate: String,
   });
+
 //connent to "todos" collection
 const Todo = mongoose.models.Todo || mongoose.model("todos", TodoSchema);
-export default Todo;  
+export default Todo;
